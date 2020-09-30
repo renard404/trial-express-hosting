@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.json({ message: "server working!" })
+    res.send({ message: "server working!" })
 });
 
 app.listen(3000, () => {
